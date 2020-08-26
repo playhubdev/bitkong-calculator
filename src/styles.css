@@ -1,0 +1,51 @@
+.app {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  font-size: 14px;
+  justify-content: flex-start;
+}
+
+.row > div:not(:last-child) {
+  margin-right: 20px;
+}
+
+.row > div:nth-child(1) {
+  width: 150px;
+}
+
+.row > div:nth-child(2) {
+  width: 100px;
+}
+
+.row > div:nth-child(3) {
+  width: 100px;
+}
+
+.ticket {
+  display: flex;
+  width: 300px;
+  margin: 20px auto;
+  flex-direction: column-reverse;
+}
+
+.ticket > div {
+  display: flex;
+}
+
+.ticket > div > div {
+  flex: 1;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: gray;
+  margin: 1px;
+  border-radius: 4px;
+}
+
+.ticket > div > div:not(.cell-lose) {
+  background: green;
+}
